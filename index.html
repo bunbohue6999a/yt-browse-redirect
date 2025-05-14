@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube</title>
+  <meta name="referrer" content="origin">
+  <style>
+    body {
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .video-box {
+      cursor: pointer;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+    .video-box:hover {
+      transform: scale(1.02);
+    }
+    .caption {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #111;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="video-box" onclick="playVideo()">
+    <img src="https://i.ytimg.com/vi/2qYS3n1OGF0/hqdefault.jpg" width="480" height="270" alt="Video Thumbnail">
+  </div>
+  <div class="caption">Đơn Phương Mình Anh Remix - Click để xem</div>
+
+  <script>
+    function playVideo() {
+      setTimeout(() => {
+        window.location.href = "https://www.youtube.com/watch?v=2qYS3n1OGF0";
+      }, 1500); // 1.5 giây delay để tránh bị đánh dấu là bot
+    }
+  </script>
+
+</body>
+</html>
